@@ -1,0 +1,34 @@
+<!-- <form [formGroup]="profileForm" (ngSubmit)="store()">
+
+    <label for="first-name">Name: </label>
+    <input id="first-name" type="text" formControlName="nombre">
+
+    <label for="last-name">url: </label>
+    <input id="last-name" type="text" formControlName="url">
+
+    <label for="last-name">seguidores: </label>
+    <input id="last-name" type="text" formControlName="seguidores">
+
+</form>
+<button (click)="store()" type="submit">new</button>
+<button (click)="order()" type="button">new</button>
+<ul *ngFor="let item of youtubes">
+
+    <li>{{item.id}}</li>
+    <li>{{item.nombre}}</li>
+    <a href="{{item.url}}">Ver</a>
+    <li>{{item.url}}</li>
+    <li>{{item.seguidores}}</li>
+</ul> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/video">Video</a>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/musica">Musica</a>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/item">Item</a>
+    </div>
+</nav>
+<router-outlet></router-outlet>
